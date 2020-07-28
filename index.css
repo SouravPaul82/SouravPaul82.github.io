@@ -1,259 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sourav Paul</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="site.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="site.js"></script>
 
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
-.about-tools ul li, .contact-social-icons ul a li {
-  text-align: center; }
+</head>
 
-.centered {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
 
-.break {
-  clear: both;
-  margin-top: 10px; }
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sourav Paul</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav-about"><a href="#about">About</a></li>
+            <li id="nav-portfolio"><a href="#portfolio">Projects</a></li>
+            <li id="nav-contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-@media (min-width: 768px) {
-  .pull-right-sm {
-    float: right !important; }
+    <!-- Begin page content -->
+    <div class="container-fluid">
+      
+      <div class="row cover top">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 headline">
+              <h1 class="text-center">Hi, I'm Sourav</h1>
+              <p class="lead text-center">Computer Science Engineer </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 center-block text-center">
+              <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div id="about" class="row cover">
+        <h2 class="text-center">About Me</h2>
+        <div class="clearfix">
+          <div class="about-info">
+            <img class="crop" src="photo1.png" >
+              I'm pursuing my B.E. in Computer Science Engineering from B.M.S.I.T.
+          </div>
+          </div>
+          </div> 
 
-  .pull-left-sm {
-    float: left !important; } }
-@media (min-width: 992px) {
-  .pull-right-md {
-    float: right !important; }
 
-  .pull-left-md {
-    float: left !important; } }
-@media (min-width: 1200px) {
-  .pull-right-lg {
-    float: right !important; }
+      <div id="portfolio" class="row cover">
+        <h2 class="text-center">Projects</h2>
+        </div>
+      <div id="contact" class="row cover bottom">
+        <h2 class="text-center contact-header">Contact Me</h2>
+        <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span> souravpaul4798@gmail.com</p>
+        <div class="text-center contact-social-icons">
+          <p>Or find me on:</p>
+          <ul class="centered">
+            
+            <a href="https://www.linkedin.com/in/sourav-paul-233100155" target="_blank"><li><i class="fa fa-linkedin-square" ></i> LinkedIn</li></a>
+            <a href="https://github.com/souravpaul82" target="_blank"><li><i class="fa fa-github"></i> Github</li></a>
+            
+      
+          </ul>
+        </p>
+        
+      </div><!-- End #Contact -->
 
-  .pull-left-lg {
-    float: left !important; } }
-* {
-  box-sizing: border-box; }
+    </div>
 
-html {
-  position: relative;
-  height: 100%; }
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
 
-img {
-  width: 100%; }
-
-body {
-  height: 100%;
-  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-  background-color: #25b79f;
-  /* Margin bottom by footer height */
-  margin-bottom: 60px; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-  color: #07374a; }
-
-p {
-  font-family: "Quattrocento", sans-serif;
-  color: #f0f0e6; }
-
-body > .container-fluid {
-  padding: 60px 15px 0; }
-
-.container-fluid .text-muted {
-  margin: 20px 0; }
-
-.btn:focus, a:focus {
-  outline: none !important; }
-
-.navbar {
-  height: 70px;
-  background-color: transparent;
-  background: transparent;
-  border: none;
-  color: #f0f0e6;
-  z-index: 100;
-  margin-bottom: 0;
-  border-radius: 0;
-  transition: background-color 1s ease 0s; }
-
-.navbar-brand {
-  display: none;
-  margin-top: 10px;
-  color: #f0f0e6;
-  font-weight: 400; }
-
-.navbar-default .navbar-nav > li > a {
-  color: #f0f0e6;
-  font-weight: 500;
-  font-size: 1em;
-  text-transform: lowercase;
-  margin: 10px 5px 5px 5px;
-  border-radius: 5px; }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-  color: #f0f0e6;
-  border: 1px solid #f0f0e6; }
-.navbar-default .navbar-nav > li > a:visited {
-  color: #f0f0e6;
-  text-decoration: none; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
-  color: #f0f0e6; }
-.navbar-default .navbar-toggle {
-  border-color: #f0f0e6; }
-  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #07374a; }
-  .navbar-default .navbar-toggle .icon-bar {
-    color: #f0f0e6;
-    background-color: #f0f0e6; }
-.navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #07374a; }
-
-/* Solid class attached on scroll past first section */
-.navbar.solid {
-  background-color: #07374a;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); }
-  .navbar.solid .navbar-brand {
-    display: inline-block;
-    color: #f0f0e6;
-    transition: color 1s ease 0s; }
-  .navbar.solid .navbar-nav > li > a {
-    color: #f0f0e6;
-    transition: color 1s ease 0s; }
-
-.cover {
-  padding: 10% 0 10% 0; }
-  .cover.top {
-    padding: 15% 0 10% 0;
-    height: 100vh;
-    display: flex;
-    background-color: #191970; }
-  .cover.bottom {
-    padding: 10% 0 10% 0; }
-
-.headline {
-  padding-top: 6.25em; }
-  @media screen and (min-width: 768px) {
-    .headline {
-      padding-top: 3.75em; } }
-  @media screen and (min-width: 992px) {
-    .headline {
-      padding-top: 1.5625em; } }
-  @media screen and (min-width: 1200px) {
-    .headline {
-      padding-top: 0px; } }
-
-#about {
-  background-color: #07374a; }
-  #about h2 {
-    color: #25b79f; }
-
-.profile-img {
-  margin-bottom: 15px;
-  width: 120px; }
-
-.about, .about-info, .about-tools, .about-last {
-  padding: 4% 10% 1% 10%;
-  font-size: 1.25em; }
-  .about-tools {
-    padding-top: 4.375em;
-    font-weight: 700;
-    font-size: 1.5em; }
-    @media screen and (min-width: 992px) {
-      .about-tools {
-        padding-top: 5.625em; } }
-    .about-tools ul:first-child {
-      padding-left: 0px; }
-    .about-tools ul {
-      color: #25b79f;
-      list-style: none; }
-      .about-tools ul li {
-        padding-top: 0.75em; }
-  .about-last {
-    padding-top: 3.125em;
-    padding-bottom: 0;
-    font-size: 1.125em; }
-    @media screen and (min-width: 992px) {
-      .about-last {
-        padding-top: 0; } }
-    .about-last p {
-      color: #25b79f; }
-
-#portfolio {
-  background-color: #25b79f; }
-  #portfolio h2 {
-    padding-bottom: 1.25em; }
-
-@media screen and (min-width: 768px) {
-  .portfolio-projects {
-    margin-top: 0.625em; } }
-.portfolio-projects--title {
-  margin-top: 0.9375em; }
-  @media screen and (min-width: 768px) {
-    .portfolio-projects--title {
-      margin-top: 20%; } }
-  @media screen and (min-width: 1200px) {
-    .portfolio-projects--title {
-      margin-top: 5%; } }
-@media screen and (min-width: 768px) {
-  .portfolio-projects--desc {
-    margin-top: 10%;
-    margin-bottom: 10%; } }
-.portfolio-projects--btn {
-  background: transparent;
-  color: #07374a;
-  border: 1px solid #07374a;
-  border-radius: 5px;
-  margin-bottom: 1.25em; }
-  .portfolio-projects--btn:hover {
-    background: #07374a;
-    color: #f0f0e6; }
-.portfolio-projects--image {
-  margin-bottom: 1.875em;
-  padding-top: 5%; }
-
-#contact {
-  background-color: #07374a; }
-  #contact h2 {
-    color: #25b79f; }
-
-.contact-social-icons p {
-  color: #25b79f; }
-.contact-social-icons ul a {
-  color: #25b79f;
-  list-style: none; }
-  .contact-social-icons ul a:hover {
-    color: #f0f0e6; }
-  .contact-social-icons ul a li {
-    display: inline-block;
-    padding: 2%; }
-
-.footer {
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 30px;
-  background-color: #07374a;
-  color: #f0f0e6; }
-
-#scrollIcon, #scrollTopIcon {
-  margin-top: 200px;
-  padding: 10px;
-  font-size: 1.5em;
-  color: #07374a;
-  border: solid 2px #07374a;
-  border-radius: 50%; }
-
-#scrollTopIcon {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #f0f0e6;
-  border-color: #f0f0e6; }
-
-.back-to-top {
-  display: none; }
-  .back-to-top.visible {
-    display: block; }
+  </body>
+  </html>
