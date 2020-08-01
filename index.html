@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sourav Paul</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="test2.css">
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
-<script src="index.js"></script>
+
+<script src="test2.js"></script>
 
 </head>
 
 
   <body>
+    
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" id="gradient">
+
+      <div class="container" >
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -42,7 +48,7 @@
         <div class="col-xs-12">
           <div class="row">
             <div class="col-xs-12 headline">
-              <h1 class="text-center">Hi, I'm Sourav</h1>
+              <h1 class="text-center">Hello World , Sourav here</h1>
               <p class="lead text-center">Computer Science Engineer </p>
             </div>
           </div>
@@ -56,21 +62,42 @@
       
       
       <div id="about" class="row cover">
-        <h2 class="text-center">About Me</h2>
-        <div class="clearfix">
-          <div class="about-info">
-            <img class="crop" src="photo1.png" >
-              I'm pursuing my B.E. in Computer Science Engineering from B.M.S.I.T.
+        <h2 class="text-center" id="mydiv">About Me</h2>
+        <div class="row">
+          <div class="col-md-6 text-center about-info">
+            <img class="img-circle text-center profile-img" src="photo1.png">
+            <p class="text-center">I'm pursuing my B.E. in Computer Science Engineering from B.M.S.I.T. </p>
           </div>
+          <div class="row">
+          <div class="col-md-6 about-info"> 
+            <p class="text-center">Programming Languages</p>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                </ul>
+              </div>
+              </div>
+            
           </div>
-          </div> 
+          
+        </div> 
+      </div><!-- End #About -->
 
+      <div id="portfolio" class="row cover ">
+        <h2 class="text-center" id="mydiv">Projects</h2>
+        <div class="proj">
+        <ul>Dbms mini projects</ul>
+        <ul>Web development</ul>
+        <ul>Chatbot using python</ul>
 
-      <div id="portfolio" class="row cover">
-        <h2 class="text-center">Projects</h2>
         </div>
-      <div id="contact" class="row cover bottom">
-        <h2 class="text-center contact-header">Contact Me</h2>
+
+      </div>
+      <div id="contact" class="row cover bottom parallax">
+        <h2 class="text-center contact-header" id="mydiv" >Contact Me</h2>
         <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span> souravpaul4798@gmail.com</p>
         <div class="text-center contact-social-icons">
           <p>Or find me on:</p>
