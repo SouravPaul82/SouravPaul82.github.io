@@ -42,7 +42,7 @@ img {
 body {
   height: 100%;
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-  background-color: #e1b382;
+  background-image: url(https://www.androidguys.com/wp-content/uploads/2014/02/minimal_modern16.jpg);
   /* Margin bottom by footer height */
   margin-bottom: 60px; }
 
@@ -59,13 +59,13 @@ p {
   color: #f0f0e6;
    }
 
-body > .container-fluid {
-  padding: 60px 15px 0; 
- background-image: url(https://www.freepik.com/free-vector/abstract-blue-geometric-shapes-background_6166980.htm#query=abstract-background&position=5}
-);}
+.container-fluid {
+  background-image: url(https://wallpapercave.com/wp/TaV5FmN.jpg);
+  padding: 60px 15px 0px;
+  height: 950px;
+ }
 
-.container-fluid .text-muted {
-  margin: 20px 0; }
+
 
 .btn:focus, a:focus {
   outline: none !important; }
@@ -114,27 +114,7 @@ body > .container-fluid {
   background-color: #07374a; }
 
 /* Solid class attached on scroll past first section */
-.navbar.solid {
-  background-color: #07374a;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); }
-  .navbar.solid .navbar-brand {
-    display: inline-block;
-    color: #f0f0e6;
-    transition: color 1s ease 0s; }
-  .navbar.solid .navbar-nav > li > a {
-    color: #f0f0e6;
-    transition: color 1s ease 0s; }
 
-.cover {
-  padding: 10% 0 10% 0; }
-  .cover.top {
-    padding: 15% 0 10% 0;
-    height: 100vh;
-    display: flex;
-    background-color: #e1b382; }
-  .cover.bottom {
-    padding: 10% 0 10% 0; }
 
 .headline {
   padding-top: 6.25em; }
@@ -150,7 +130,8 @@ body > .container-fluid {
 
 #about {
   background-color: #2d545e;
-  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+  background-image: url(https://cdn.wallpapersafari.com/14/80/KWs6o9.png);
+   height: 600px;
    }
   #about h2 {
     font-size: 100px;
@@ -178,21 +159,20 @@ body > .container-fluid {
   object-fit:cover;
   border-radius:50%;}
 
-}
 
-#portfolio {
-  background-color: #000000; 
+#portfolio {background-color: #2d545e;
   height: 600px;
   background-image: url(https://i.ytimg.com/vi/7Yv-slSF5o8/maxresdefault.jpg);
   }
   #portfolio h2 {
     font-size: 100px;
-    
+    font-weight: 900;
     -webkit-text-stroke: 1px white; }
 
 
 .proj{
-  font-size: 50px;
+  font-size: 30px;
+  color: white;
 }
 
 #mydiv {
@@ -261,8 +241,7 @@ body > .container-fluid {
   
 
   /* Set a specific height */
-  height: 500px;
-
+  
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
