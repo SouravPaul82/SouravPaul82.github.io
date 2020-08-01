@@ -9,9 +9,7 @@
   margin-right: auto;
  }
 
-.break {
-  clear: both;
-  margin-top: 10px; }
+
 
 @media (min-width: 768px) {
   .pull-right-sm {
@@ -62,7 +60,9 @@ p {
    }
 
 body > .container-fluid {
-  padding: 60px 15px 0; }
+  padding: 60px 15px 0; 
+ background-image: url(https://www.freepik.com/free-vector/abstract-blue-geometric-shapes-background_6166980.htm#query=abstract-background&position=5}
+);}
 
 .container-fluid .text-muted {
   margin: 20px 0; }
@@ -149,9 +149,13 @@ body > .container-fluid {
       padding-top: 0px; } }
 
 #about {
-  background-color: #2d545e; }
+  background-color: #2d545e;
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+   }
   #about h2 {
-    color: #62093B; }
+    font-size: 100px;
+    color: #62093B;
+    -webkit-text-stroke: 1px white; }
 
 .profile-img {
   margin-bottom: 15px;
@@ -160,7 +164,7 @@ body > .container-fluid {
 
 .about, .about-info {
   padding: 4% 10% 1% 10%;
-  font-size: 1.25em;
+  font-size: 1.5em;
    }
 
 .clearfix {
@@ -174,50 +178,45 @@ body > .container-fluid {
   object-fit:cover;
   border-radius:50%;}
 
-
-
-
 }
 
 #portfolio {
-  background-color: #ff414e; }
+  background-color: #000000; 
+  height: 600px;
+  background-image: url(https://i.ytimg.com/vi/7Yv-slSF5o8/maxresdefault.jpg);
+  }
   #portfolio h2 {
-    padding-bottom: 1.25em; }
+    font-size: 100px;
+    
+    -webkit-text-stroke: 1px white; }
 
-@media screen and (min-width: 768px) {
-  .portfolio-projects {
-    margin-top: 0.625em; } }
-.portfolio-projects--title {
-  margin-top: 0.9375em; }
-  @media screen and (min-width: 768px) {
-    .portfolio-projects--title {
-      margin-top: 20%; } }
-  @media screen and (min-width: 1200px) {
-    .portfolio-projects--title {
-      margin-top: 5%; } }
-@media screen and (min-width: 768px) {
-  .portfolio-projects--desc {
-    margin-top: 10%;
-    margin-bottom: 10%; } }
-.portfolio-projects--btn {
-  background: transparent;
-  color: #07374a;
-  border: 1px solid #07374a;
-  border-radius: 5px;
-  margin-bottom: 1.25em; }
-  .portfolio-projects--btn:hover {
-    background: #07374a;
-    color: #f0f0e6; }
-.portfolio-projects--image {
-  margin-bottom: 1.875em;
-  padding-top: 5%; }
+
+.proj{
+  font-size: 50px;
+}
+
+#mydiv {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px blue;}
+}
 
 #contact {
-  background-color: #ff5e6c; }
+  background-color: #000000;
+  height: 600px;
+  background-image: url(https://wallpapertag.com/wallpaper/full/4/5/8/462214-amazing-black-and-white-abstract-wallpaper-2120x1382-meizu.jpg); 
+}
   #contact h2 {
-    color: #25b79f; }
+    font-weight: 900;
+    color: #660033; 
+    font-size: 100px;
+     -webkit-text-stroke: 1px white;
+  }
 
 .contact-social-icons p {
+  font-size: 20px;
   color: #25b79f; }
 .contact-social-icons ul a {
   color: #25b79f;
@@ -232,7 +231,7 @@ body > .container-fluid {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 30px;
+  height: 0px;
   background-color: #2d545e;
   color: #f0f0e6; }
 
@@ -254,3 +253,19 @@ body > .container-fluid {
   display: none; }
   .back-to-top.visible {
     display: block; }
+
+
+
+.parallax {
+  /* The image used */
+  
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
