@@ -18,7 +18,7 @@ var step = 0;
 var colorIndices = [0,1,2,3];
 
 //transition speed
-var gradientSpeed = 0.02;
+var gradientSpeed = 0.002;
 
 function updateGradient()
 {
@@ -62,6 +62,16 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
 
 setInterval(updateGradient,10);
 
+
+
+$(function() {  
+    var glower = $('#myGlower');
+    window.setInterval(function() {  
+        glower.toggleClass('active');
+    }, 1000);
+});
+
+
 $(document).ready(function() {
         $("#scrollIcon").click(function(e) {
             e.preventDefault();
@@ -85,3 +95,7 @@ $(document).ready(function() {
         });
 
         });
+
+
+
+
