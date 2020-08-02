@@ -5,14 +5,14 @@
   <link rel="icon" href="logo.png">
   <title>Sourav Paul</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="test2.css">
  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
 
-<script src="index.js"></script>
+<script src="test2.js"></script>
 
 </head>
 
@@ -43,18 +43,18 @@
     </nav>
 
     <!-- Begin page content -->
-    <div class="container-fluid parallax">
+    <div class="container-fluid parallax olp">
       
       <div class="row top">
         <div class="col-xs-12">
           <div class="row">
             <div class="col-xs-12 headline">
-              <h1 class="text-center">Hello World , Sourav here</h1>
+              <h1 class="text-center olp">Hello World , Sourav here</h1>
               <p class="lead text-center">Computer Science Engineer </p>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 center-block text-center">
+            <div class="col-xs-12 center-block text-center olp">
               <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
             </div>
           </div>
@@ -62,22 +62,22 @@
       </div>
     </div>
       
-      <div id="about" class="row parallax">
+      <div id="about" class="row olp parallax">
         <h2 class="text-center" id="mydiv">About Me</h2>
         <div class="row">
           <div class="col-md-6 text-center about-info">
-            <img class="img-circle text-center profile-img" src="photo1.png">
-            <p class="text-center">I'm pursuing my B.E. in Computer Science Engineering from B.M.S.I.T. </p>
+            <img class="img-circle text-center profile-img" src="photo1.png" id="myGlower">
+            <p class="text-center txtcnt">I'm pursuing my B.E. in Computer Science Engineering from B.M.S.I.T. </p>
           </div>
           <div class="row">
           <div class="col-md-6 about-info"> 
-            <p class="text-center">Programming Languages</p>
-                <ul class="proj">
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Javascript</li>
-                  <li>Python</li>
-                  <li>Java</li>
+            <p class="text-center txtcnt skl">Skills I acquired</p>
+                <ul class="txtcnt text-center">
+                  <ul>HTML5</ul>
+                  <ul>CSS3</ul>
+                  <ul>Javascript</ul>
+                  <ul>Python</ul>
+                  <ul>Java</ul>
                 </ul>
               </div>
               </div>
@@ -90,14 +90,25 @@
 
 
 
-      <div id="portfolio" class="row parallax">
+      <div id="portfolio" class="row parallax olp">
         <h2 class="text-center" id="mydiv">Project</h2>
               <div class="text-center">
 
                <ul class="proj">
-                <li>Dbms mini projects</li>
-                <li>Web development</li>
-                <li>Chatbot using python</li>
+                <li>Dbms mini projects
+                  <ul class="mindet">This project uses basic HTML and CSS front end to display the list of upcoming movies, stored in mysql using python libraries such as pymysql, pandas, flask and sqlalchemy.</ul>
+                </li>
+                <br>
+                <li>Web development
+                    <ul class="mindet">I used various basic skills of HTML, CSS, JavaScript and Bootstrap to create it. I also took few courses for this to learn as much as I could.</ul>
+
+                </li>
+                <br>
+                <li>Chatbot using python
+                  <ul class="mindet">This project uses python libraries such as keras, tensorflow, ntkl, etc. To create a basic working chatbot which works after going through a series of test cases.</ul>
+
+
+                </li>
               </ul>
 
               </div>
@@ -107,7 +118,7 @@
             
      
 
-      <div id="contact" class="row  bottom parallax">
+      <div id="contact" class="row  bottom olpcont">
         <h2 class="text-center contact-header" id="mydiv" >Contact Me</h2>
         <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span> souravpaul4798@gmail.com</p>
         <div class="text-center contact-social-icons">
@@ -125,10 +136,6 @@
 
     </div>
 
-    <footer class="footer">
-      <div class="container">
-      </div>
-    </footer>
-
+    
   </body>
   </html>
