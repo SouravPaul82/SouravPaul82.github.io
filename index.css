@@ -1,7 +1,14 @@
-
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
 .about-tools ul li, .contact-social-icons ul a li {
   text-align: center; }
+
+
+ @font-face {
+  font-family: myfont;
+  src: url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento);
+}
+
+
 
 .centered {
   float: none;
@@ -9,7 +16,14 @@
   margin-right: auto;
  }
 
+.olp{
+ padding-top:100px; 
+}
 
+.olpcont{
+
+padding-top: 50px;
+}
 
 @media (min-width: 768px) {
   .pull-right-sm {
@@ -42,9 +56,8 @@ img {
 body {
   height: 100%;
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-  background-image: url(https://www.androidguys.com/wp-content/uploads/2014/02/minimal_modern16.jpg);
   /* Margin bottom by footer height */
-  margin-bottom: 60px; }
+  margin-bottom: 10px; }
 
 h1,
 h2,
@@ -60,7 +73,7 @@ p {
    }
 
 .container-fluid {
-  background-image: url(https://wallpapercave.com/wp/TaV5FmN.jpg);
+  background-image: url(https://images.wallpapersden.com/image/download/minimal-mountains_57564_3840x2160.jpg);
   padding: 60px 15px 0px;
   height: 950px;
  }
@@ -79,13 +92,16 @@ p {
   z-index: 100;
   margin-bottom: 0;
   border-radius: 0;
-  transition: background-color 1s ease 0s; }
+  transition: background-color 1s ease 0s; 
+  
+  }
 
 .navbar-brand {
   display: none;
   margin-top: 10px;
   color: #f0f0e6;
-  font-weight: 400; }
+  font-weight: 400;
+   }
 
 .navbar-default .navbar-nav > li > a {
   color: #f0f0e6;
@@ -130,12 +146,15 @@ p {
 
 #about {
   background-color: #2d545e;
-  background-image: url(https://cdn.wallpapersafari.com/14/80/KWs6o9.png);
-   height: 600px;
+  background-image: url(http://getwallpapers.com/wallpaper/full/f/8/1/74346.jpg);
+   height: 800px;
+
+
    }
   #about h2 {
-    font-size: 100px;
+    font-size: 60px;
     color: #62093B;
+    font-weight: 900;
     -webkit-text-stroke: 1px white; }
 
 .profile-img {
@@ -152,6 +171,21 @@ p {
   overflow: auto;
 }
 
+#myGlower {
+    background-color: #ccc;
+    border: 1px solid transparent;    
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear;
+       -moz-transition: border 1s linear, box-shadow 1s linear;
+            transition: border 2s linear, box-shadow 1s linear;
+}
+
+#myGlower.active {
+    border-color: blue;
+    -webkit-box-shadow: 0 0 5px blue;
+       -moz-box-shadow: 0 0 5px blue;
+            box-shadow: 0 0 15px green;
+}
+
 
 .crop{
   width:200px;
@@ -161,18 +195,26 @@ p {
 
 
 #portfolio {background-color: #2d545e;
-  height: 600px;
-  background-image: url(https://i.ytimg.com/vi/7Yv-slSF5o8/maxresdefault.jpg);
+  height: 800px;
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Black-dark-Minimal-wallpapers-HD.jpg);
   }
   #portfolio h2 {
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 900;
     -webkit-text-stroke: 1px white; }
 
 
+.txtcnt{
+  color:black;
+  font-size: 20px;
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+
+}
+
 .proj{
   font-size: 30px;
   color: white;
+
 }
 
 #mydiv {
@@ -184,14 +226,14 @@ p {
 }
 
 #contact {
-  background-color: #000000;
-  height: 600px;
-  background-image: url(https://wallpapertag.com/wallpaper/full/4/5/8/462214-amazing-black-and-white-abstract-wallpaper-2120x1382-meizu.jpg); 
+  
+  height: 350px;
+  background-color: #000000; 
 }
   #contact h2 {
     font-weight: 900;
     color: #660033; 
-    font-size: 100px;
+    font-size: 60px;
      -webkit-text-stroke: 1px white;
   }
 
@@ -247,4 +289,14 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+.mindet{
+  font-size: 20px;
+}
+
+.skl{
+  padding-left: 90px;
+  font-size: 30px;
 }
