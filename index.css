@@ -158,6 +158,10 @@ p {
     font-weight: 900;
     -webkit-text-stroke: 1px white; }
 
+#aboutdetails{
+  color:#ffffff;
+}
+
 .profile-img {
   margin-bottom: 15px;
   width: 120px;
