@@ -1,22 +1,28 @@
-name: Deploy to GitHub Pages
+name: CI/CD Website Deployment
 
 on:
   push:
-    branches: [main]
-
-permissions:
-  contents: write
+    branches:
+      - main # Triggers the pipeline only on pushes to your main branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./          # or ./dist if you have a build step
-          publish_branch: gh-pages
+    steps:
+    # Step 1: Pull the latest code down into the GitHub runner workspace
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # Step 2: Authenticate securely with AWS using your repo secrets
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    # Step 3: Synchronize folder structures seamlessly to S3
+    - name: Deploy Frontend Files to S3
+      run: |
+        aws s3 sync ./frontend s3://${{ secrets.S3_BUCKET_NAME }} --delete
